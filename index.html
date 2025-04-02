@@ -153,6 +153,21 @@
   color: #cc0066;
   text-decoration: underline;
 }
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
@@ -176,7 +191,270 @@
         <li>Friday, April 12 – Wine & Watercolors</li>
         <li>Saturday, April 20 – Sunset Paint & Chill</li>
       </ul>
+   </section>
+    
+<section class="light" id="gallery">
+  <h2>Gallery</h2>
+  <p>Here are some highlights from our recent paint nights in Porto!</p>
+  <div class="gallery">
+    <img src="gallery1.jpg" alt="Guests painting" />
+    <img src="gallery2.jpg" alt="Wine and brushes" />
+    <img src="gallery3.jpg" alt="Finished paintings" />
+  </div>
+</section>
+
+<section class="dark" id="about">
+  <h2>About</h2>
+  <p>Paint Nights in Porto is a fun and relaxing experience where guests enjoy wine, music, and step-by-step painting instructions—all while surrounded by the beauty of Porto. No experience required!</p>
+</section>
+
+<section class="light" id="contact">
+  <h2>Contact</h2>
+  <p>Have questions? Want to book a private event? Get in touch!</p>
+  <p>Email: info@paintporto.com</p>
+  <p>Instagram: @paintnightsporto</p>
+</section>  
+
+    <section class="dark">
+      <div class="flex-row">
+        <div class="left">
+          <h2>Book Your Spot</h2>
+          <p>Use the button below to book your seat in the next session!</p>
+          <a href="https://calendly.com/YOUR_BOOKING_LINK" target="_blank">
+            <button>Book Now</button>
+          </a>
+        </div>
+        <div class="right">
+          <img src="2818.jpg" alt="Paint Night Example" class="book-image">
+        </div>
+      </div>
     </section>
+
+    <section class="light">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://tiktok.com/@YourPage" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://snapchat.com/add/YourUsername" target="_blank"><i class="fab fa-snapchat-square"></i></a>
+      </div>
+    </section>
+
+    <sec<!DOCTYPE html>
+<html>
+<head>
+  <title>Paint Nights in Porto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #fceabb);
+      color: #333;
+    }
+
+    .hero {
+      background-image: url('3493.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #cc0066;
+      margin-top: 0;
+    }
+
+    button {
+      background-color: #cc0066;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #b30059;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 30px;
+      color: #cc0066;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .light {
+      background-color: #f2f2f2;
+    }
+
+    .dark {
+      background-color: #e0e0e0;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .left, .right {
+      flex: 1 1 100%;
+    }
+
+    @media (min-width: 700px) {
+      .left, .right {
+        flex: 1 1 48%;
+      }
+    }
+
+    .book-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .navbar {
+  text-align: center;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #b30059;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #cc0066;
+  text-decoration: underline;
+}
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Paint Nights in Porto</h1>
+  </div>
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+  <div class="container">
+    <p style="text-align: center;">Relax. Sip. Paint. Discover your inner artist in beautiful Porto, Portugal!</p>
+
+    <section class="light">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Friday, April 12 – Wine & Watercolors</li>
+        <li>Saturday, April 20 – Sunset Paint & Chill</li>
+      </ul>
+   </section>
+    
+<section class="light" id="gallery">
+  <h2>Gallery</h2>
+  <p>Here are some highlights from our recent paint nights in Porto!</p>
+  <div class="gallery">
+    <img src="gallery1.jpg" alt="Guests painting" />
+    <img src="gallery2.jpg" alt="Wine and brushes" />
+    <img src="gallery3.jpg" alt="Finished paintings" />
+  </div>
+</section>
+
+<section class="dark" id="about">
+  <h2>About</h2>
+  <p>Paint Nights in Porto is a fun and relaxing experience where guests enjoy wine, music, and step-by-step painting instructions—all while surrounded by the beauty of Porto. No experience required!</p>
+</section>
+
+<section class="light" id="contact">
+  <h2>Contact</h2>
+  <p>Have questions? Want to book a private event? Get in touch!</p>
+  <p>Email: info@paintporto.com</p>
+  <p>Instagram: @paintnightsporto</p>
+</section>  
 
     <section class="dark">
       <div class="flex-row">
@@ -203,6 +481,18 @@
     </section>
 
     <section class="dark">
+      <h2>Location</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9120.318275809412!2d-8.55348276152666!3d37.125475424384085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b28eca9242961%3A0x93fcc923718014e1!2sPortim%C3%A3o%2C%20Portugal!5e0!3m2!1sen!2sca!4v1743595047888!5m2!1sen!2sca" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </div>
+
+</body>
+</html>
+tion class="dark">
       <h2>Location</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9120.318275809412!2d-8.55348276152666!3d37.125475424384085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b28eca9242961%3A0x93fcc923718014e1!2sPortim%C3%A3o%2C%20Portugal!5e0!3m2!1sen!2sca!4v1743595047888!5m2!1sen!2sca" 
         allowfullscreen="" 
