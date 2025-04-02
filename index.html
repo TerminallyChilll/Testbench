@@ -13,6 +13,25 @@
       color: #333;
     }
 
+    .hero {
+      background-image: url('3493.jpg'); /* Make sure this is uploaded to your repo */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -21,12 +40,6 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       margin-top: 40px;
-    }
-
-    h1 {
-      color: #b30059;
-      text-align: center;
-      margin-bottom: 10px;
     }
 
     h2 {
@@ -98,8 +111,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
+
+  <div class="hero">
     <h1>Paint Nights in Porto</h1>
+  </div>
+
+  <div class="container">
     <p style="text-align: center;">Relax. Sip. Paint. Discover your inner artist in beautiful Porto, Portugal!</p>
 
     <section class="light">
